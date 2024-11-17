@@ -8,25 +8,35 @@
 <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet"> 
 <style>
 /** note I select Pacifico as my body text and Roboto further down the page for my header and link font, I can use these because of the reference in the <head> in the HTML doc **/
-body {
+ body {
 font-family: "Pacifico", cursive;
 font-size: 30px;
 background-color: aqua;
 }
 
 /* Responsive Design Additions */
-@media only screen and (max-width: 768px) {
-    width: 100%;
-  <html  {
-    color: yellow;
-  }
-   img {
+@media screen and (max-width: 600px) {
+    
+ body {
+  background-color: yellow;
+  width: 100%;
+   font-size: 0.75em;
+}
+   img,
+    p {
       width: 100%;
-    }
-  p {
-    width: 100%;
+  }
   }
   
+@media screen and (min-width: 601px) {
+  
+  img {
+    width: 800px;
+  }
+  
+  p {
+    width: 600px;
+  }
   }
 /*your CSS will go here*/
 
